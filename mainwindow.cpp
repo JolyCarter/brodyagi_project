@@ -16,6 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+
     QString str = ui->lineEdit->text();
 
     if (str == "") {
@@ -23,6 +24,8 @@ void MainWindow::on_pushButton_clicked()
     }
 
     ui->listWidget->addItem(str);
+    ui->lineEdit->clear();
+
 }
 
 

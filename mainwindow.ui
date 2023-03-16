@@ -13,13 +13,43 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+
+}
+
+QWidget {
+	background:rgb(92, 96, 255);
+	font-size: 100%;
+}
+
+QListWidget {
+	background:rgb(92, 96, 255);
+	font: 700 24pt &quot;Al Bayan&quot;;
+}
+
+QLineEdit {
+	border:2px solid gray;
+	border-radius:10px;
+	background:rgb(62, 52, 88);
+	font: 700 18pt &quot;Al Bayan&quot;;
+
+	
+}
+
+QPushButton {
+	border:2px solid gray;
+	border-radius:10px;
+	background:rgb(62, 52, 88);
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>731</width>
+      <width>771</width>
       <height>501</height>
      </rect>
     </property>
@@ -29,18 +59,21 @@
      <rect>
       <x>10</x>
       <y>540</y>
-      <width>291</width>
+      <width>421</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>550</y>
+      <x>440</x>
+      <y>540</y>
       <width>100</width>
-      <height>32</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -50,10 +83,10 @@
    <widget class="QPushButton" name="pushButtonDel">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>550</y>
+      <x>680</x>
+      <y>540</y>
       <width>100</width>
-      <height>32</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
