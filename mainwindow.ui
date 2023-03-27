@@ -14,43 +14,64 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">* {
-
-}
-
-QWidget {
-	background:rgb(92, 96, 255);
+   <string notr="true">QWidget {
+	background:rgb(192, 192, 192);
 	font-size: 100%;
 }
 
-QListWidget {
-	background:rgb(92, 96, 255);
+QLabel {
+	border:2px solid gray;
+	background:rgb(105, 105, 105);
 	font: 700 24pt &quot;Al Bayan&quot;;
 }
 
-QLineEdit {
+QListWidget {
 	border:2px solid gray;
-	border-radius:10px;
-	background:rgb(62, 52, 88);
-	font: 700 18pt &quot;Al Bayan&quot;;
-
-	
+	background:rgb(105, 105, 105);
+	font: 700 24pt &quot;Al Bayan&quot;;
 }
 
-QPushButton {
+
+QLineEdit {
 	border:2px solid gray;
-	border-radius:10px;
-	background:rgb(62, 52, 88);
-}</string>
+	border-radius:15px;
+	background:rgb(105, 105, 105);
+	font: 700 18pt &quot;Al Bayan&quot;;
+}
+
+
+QPushButton#pushButtonDel{
+	border:2px solid gray;
+	border-radius:15px;
+	background:rgb(73, 77, 78);
+}
+QPushButton#pushButtonDel:hover {
+	border:2px solid gray;
+	border-radius:15px;
+	background:rgb(144, 52, 53);
+}
+
+
+QPushButton#pushButton{
+	border:2px solid gray;
+	border-radius:15px;
+	background:rgb(73, 77, 78);
+}
+QPushButton#pushButton:hover {
+	border:2px solid gray;
+	border-radius:15px;
+	background:rgb(53, 132, 41);
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>771</width>
-      <height>501</height>
+      <y>60</y>
+      <width>781</width>
+      <height>471</height>
      </rect>
     </property>
    </widget>
@@ -59,7 +80,7 @@ QPushButton {
      <rect>
       <x>10</x>
       <y>540</y>
-      <width>421</width>
+      <width>491</width>
       <height>41</height>
      </rect>
     </property>
@@ -70,7 +91,7 @@ QPushButton {
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>510</x>
       <y>540</y>
       <width>100</width>
       <height>41</height>
@@ -83,7 +104,7 @@ QPushButton {
    <widget class="QPushButton" name="pushButtonDel">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>690</x>
       <y>540</y>
       <width>100</width>
       <height>41</height>
@@ -91,6 +112,19 @@ QPushButton {
     </property>
     <property name="text">
      <string>Удалить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelYourTask">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
@@ -106,6 +140,12 @@ QPushButton {
    </attribute>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>pushButtonDel</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

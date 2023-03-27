@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QKeyEvent>
+#include <QListWidgetItem>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -20,11 +21,10 @@ private slots:
 
     void on_pushButtonDel_clicked();
 
-    void on_listWidget_currentRowChanged(int currentRow);
+    void keyPressEvent(QKeyEvent* event);
+
 
 private:
     Ui::MainWindow *ui;
-
-    int mnSelected = 1;
 };
 #endif // MAINWINDOW_H
